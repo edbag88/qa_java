@@ -1,4 +1,4 @@
-package com.example.tests;
+package com.example;
 import java.util.List;
 
 public class Lion {
@@ -7,6 +7,7 @@ public class Lion {
     private Feline feline;
 
     public Lion(String sex, Feline feline) throws Exception {
+        this.feline = feline;
         if ("Самец".equals(sex)) {
             hasMane = true;
         } else if ("Самка".equals(sex)) {
